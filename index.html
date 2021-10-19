@@ -1,763 +1,282 @@
-<!DOCTYPE html>
-<html lang="pl">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
-      rel="stylesheet"
-    />
-
-    <title>Voten641 Portfolio</title>
-<!--
-Reflux Template
-https://templatemo.com/tm-531-reflux
--->
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-
-    <!-- Additional CSS Files -->
-    <link rel="stylesheet" href="assets/css/fontawesome.css" />
-    <link rel="stylesheet" href="assets/css/templatemo-style.css" />
-    <link rel="stylesheet" href="assets/css/owl.css" />
-    <link rel="stylesheet" href="assets/css/lightbox.css" />
-  </head>
-
-  <body>
-    <div id="page-wraper">
-      <!-- Sidebar Menu -->
-      <div class="responsive-nav">
-        <i class="fa fa-bars" id="menu-toggle"></i>
-        <div id="menu" class="menu">
-          <i class="fa fa-times" id="menu-close"></i>
-          <div class="container">
-            <div class="image">
-              <a href="#"><img src="assets/images/Author-image.jpg" alt="" /></a>
+<html>
+    <head>
+        <link href="main.css" rel="stylesheet"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/880049f139.js" crossorigin="anonymous"></script>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    </head>
+    <body>
+        <script>
+            AOS.init();
+            function english(){
+                var en = document.getElementById("en");
+                var pl = document.getElementById("pl");
+                en.classList.remove("unactive");
+                pl.classList.add("unactive");
+            }
+            function polish(){
+                var en = document.getElementById("pl");
+                var pl = document.getElementById("en");
+                en.classList.remove("unactive");
+                pl.classList.add("unactive");
+            }
+        </script>
+        <div id="en">
+            <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="voten641" data-description="Support me on Buy me a coffee!" data-message="" data-color="#BD5FFF" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+            <div class="navbar">
+                <div class="dropdown">
+                    <button class="dropbtn"><i class="fas fa-globe-europe"></i>  English   <i class="fas fa-sort-down"></i></button>
+                    <div class="dropdown-content">
+                      <a href="#" onclick="english();">English</a>
+                      <a href="#" onclick="polish();">Polski</a>
+                    </div>
+                  </div>
             </div>
-            <div class="author-content">
-              <h4>Voten641</h4>
-              <span>Programista Minecraft</span>
+            <div class="titlediv">
+                <a class="title purple">Hello<a class="title comma purple">,</a></a><br>
+                <a class="title white">I'm </a><a class="title blue">Voten<a class="title comma blue">,</a></a><br>
+                <a class="title white">Java Developer.</a><br><br>
+                <a class="under-title gray">Bukkit / Spigot / Bungeecord</a><br><br>
+                <a href="mailto:voten641@gmail.com" target="_blank" class="gray under-title"><i class="far fa-envelope"></i>  </a>
+                <a href="https://github.com/voten641" target="_blank" class="gray under-title"><i class="fab fa-github"></i>  </a>
+                <a href="https://twitter.com/voten2cm" target="_blank" class="gray under-title"><i class="fab fa-twitter"></i>  </a>
+                <a href="https://discord.com/users/291308183928963092" target="_blank" class="gray under-title"><i class="fab fa-discord"></i></a>
             </div>
-            <nav class="main-nav" role="navigation">
-              <ul class="main-menu">
-                <li><a href="#section1">O mnie</a></li>
-                <li><a href="#section2">Zdjęcia</a></li>
-                <li><a href="#section3">Kontakt</a></li>
-              </ul>
-            </nav>
-            <div class="social-network">
-              <ul class="soial-icons">
-                <li>
-                  <a href="https://www.facebook.com/Voten641-Programista-Mc-103874028075442"
-                    ><i class="fa fa-facebook"></i
-                  ></a>
-                </li>
-                <li>
-                  <a href="https://twitter.com/Voten641"><i class="fa fa-twitter"></i></a>
-                </li>
-                <li>
-                  <a href="mailto:voten641@gmail.com"><i class="fa fa-envelope"></i></a>
-                </li>
-              </ul>
+            <div class="scroll-down">
+                <a class="gray">SCROLL DOWN</a><br>
+                <i class="fas fa-chevron-down gray wide"></i>
             </div>
-            <div class="copyright-text">
-              <p>Copyright 2021 Voten641</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <section class="section about-me" id="section1">
-        <div class="container">
-          <div class="section-heading">
-            <h2>O mnie</h2>
-            <div class="line-dec"></div>
-            <span
-              >Witaj.
-			  Nazywam się Kevin mam 19 lat, w internecie używam Voten641, 6 lat temu zacząłem tworzyć różne serwery minecraft, na początku wszystko pobierałem z internetu, dodawałem różnie niepotrzebne rzeczy i tym obciążałem serwer, potem zacząłęm sam pisać skrypty, jakoś to wychodziło i pamiętam że nawet zrobiłem skrypt pozwalający na przywrócenie graczowi całego ekwipunku po śmierci. Od 3 lat zajmuję się pisaniem pluginów ponieważ dobrze wiem że skrypty za bardzo obciążają serwer i pluginy są bardziej uniwersalne. Jak na razie pracowałem dla kilku serwerów ale to były małe projekty które z tego co wiem już dawno updały, niżej znajdują się moje projekty, jeżeli ktoś byłby nimi zainteresowany to oczywiście mogę je sprzedać.</span
+            <div class="about-me"
+                data-aos="fade-up"
+                data-aos-offset="200"
+                data-aos-delay="50"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out"
+                data-aos-mirror="true"
+                data-aos-once="true"
+                data-aos-anchor-placement="top-center"
             >
-          </div>
-          <div class="left-image-post">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="left-image">
-                  <img src="assets/images/Incognito5.png" alt="" />
+                <div class="ab-title center">
+                    <a class="title gray">About me</a>
                 </div>
-              </div>
-              <div class="col-md-6">
-                <div class="right-text">
-                  <h4>Plugin pod Incognito</h4>
-                  <p>
-                    Pozwala on na zmianę nazwy gracza nad głową i na chacie,
-					a także na zmianę skina. Plugin jest w pełni funkcjonalny
-					z FunnyGuilds. Działa on bez przelogowywania się i do wyboru
-					są 2 opcje, jedna pozwala na zmianę incognito poprzez komendy
-					a druga poprzez menu.
-                  </p>
-                  <div class="white-button">
-                    <a href="#jd2">Więcej zdjęć</a>
+                <div class="ab-edu">
+                    <div class="info-ab">
+                        <div class="info-ab-title"><a class="info-ab-title gray">Education</a></div>
+                        <a class="info-ab-title-2 white">IT School in Poland</a><br>
+                        <a class="inf-ab-title-2 gray">2018 - until now</a>
+                    </div>
+                </div>
+                <div class="ab-exp">
+                    <div class="info-ab">
+                        <div class="info-ab-title"><a class="info-ab-title gray">Experience</a></div>
+                        <a class="info-ab-title-2 white">HTML / PHP</a><br><br>
+                        <a class="info-ab-desc white">Programming of less <br>advanced websites <br>or browser games<br> using <a href="https://phaser.io" target="_blank" class="purple" style="text-decoration: none;">Phaser</a></a><br>
+                        <a class="inf-ab-title-2 gray">2015-2017</a>
+                    </div>
+                    <div class="info-ab-no">
+                        <a class="info-ab-title-2 white">C++ / C#</a><br><br>
+                        <a class="info-ab-desc white">Programing bunch of<br> different programs <br>and games in <a href="https://unity.com" target="_blank" class="purple" style="text-decoration: none;">Unity</a></a><br>
+                        <a class="inf-ab-title-2 gray">2016-2017</a>
+                    </div>
+                    <div class="info-ab-no">
+                        <a class="info-ab-title-2 white">Java</a><br><br>
+                        <a class="info-ab-desc white">Creating or configuring <br>plugins and servers in<br> Spigot / Bungeecord</a><br>
+                        <a class="inf-ab-title-2 gray">2018 - until now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="skills"
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="true"
+            data-aos-anchor-placement="top-center"
+        >
+                <div class="ab-title center">
+                    <a class="title gray">Skills</a>
+                </div>
+                <div class="skills=bars">
+                    <a class="info-ab-title-2 white">Java</a><br>
+                    <progress class="pbar" max="100" value="75"></progress><a class="white"> 75%</a><br><br>
+                    <a class="info-ab-title-2 white">HTML / CSS / PHP</a><br>
+                    <progress class="pbar" max="100" value="65"></progress><a class="white"> 65%</a><br><br>
+                    <a class="info-ab-title-2 white">C++ / C#</a><br>
+                    <progress class="pbar" max="100" value="65"></progress><a class="white"> 65%</a><br><br>
+                </div>
+            </div>
+            
+            <div class="skills"
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="true"
+            data-aos-anchor-placement="top-center"
+        >
+                <div class="ab-title center">
+                    <a class="title gray">My works</a><br>
+                    <a class="title purple">4 exaples</a>
+                </div>
+                <div class="works">
+                    <div class="work-1">
+                        <img class="work-img" src="assets/images/Incognito1.png"><br><br>
+                        <a class="info-ab-title-2 purple bold">Incognito Plugin</a><br><br>
+                        <a class="info-ab-desc white">Plugin allows to change<br> players nick and skin.<br> Is fully functionable<br> with FunnyGuilds</a><br><br>
+                        <a href="incognito.html" class="blue no-dec">More images</a>
+                    </div>
+                    <div class="work-1">
+                        <img class="work-img" src="assets/images/chat1.jpg"><br><br>
+                        <a class="info-ab-title-2 purple bold">Chat configuration</a><br><br>
+                        <a class="info-ab-desc white">Ability to disable or enable: private messages, kill messages, global messages, drop messages, auto messages, world cleanup messages, and store messages</a><br>
+                    </div>
+                    <div class="work-1">
+                        <img class="work-img" src="assets/images/stoniarki1.png"><br><br>
+                        <a class="info-ab-title-2 purple bold">Stone generator and autosell</a><br><br>
+                        <a class="info-ab-desc white">The plugin adds 5 levels of stone generators, they all generate stone the same, but each has a different drop. The higher the level, the drop on more items and the greater the chances. Also in the plugin is an add-on to SkyBlock in the form of an autosell for cactus and sugar-cane</a><br>
+                    </div>
+                    <div class="work-1">
+                        <img class="work-img" src="assets/images/noimage.png"><br><br>
+                        <a class="info-ab-title-2 purple bold">BetonQuest ItemsAdder addon</a><br><br>
+                        <a class="info-ab-desc white">Plugin adds new conditions, events and objectives for BetonQuest to integrate with ItemsAdder</a><br><br>
+                        <a href="https://www.spigotmc.org/resources/betonquest-itemsadder-addon.90933/" class="blue no-dec">SpigotMc website</a>
+                    </div>
+                </div>
+                <div class="all-works center"><a href="all-works.html" class="title blue no-dec">All works</a></div>
+            </div>
+        </div>
+        <div id="pl" class="unactive">
+            <div class="navbar">
+                <div class="dropdown">
+                    <button class="dropbtn"><i class="fas fa-globe-europe"></i>  Polski   <i class="fas fa-sort-down"></i></button>
+                    <div class="dropdown-content">
+                      <a href="#" onclick="english();">English</a>
+                      <a href="#" onclick="polish();">Polski</a>
+                    </div>
                   </div>
-                </div>
-              </div>
             </div>
-          </div>
-          <div class="right-image-post">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="left-text">
-                  <h4>Konfiguracja chatu</h4>
-                  <p>
-                    Plugin pod konfiguracje chatu, zawiera on do
-					poprawnego działania /msg (do prywatnych wiadomości),
-					/drop (cały drop na serwer), automatyczne wiadomości
-					(do skonfigurowania w configu), czyszczenie świata z
-					leżących przedmiotów i komende /bc (broadcast do ogłaszania
-					różnych wiadomości aby można było wyłączyć wiadomości ze sklepu).
-					Plugin pozwala na wyłączenie: wiadomości prywatnych, wiadomości
-					o zabójstwie, wiadomości globalnych, wiadomości dotyczących dropu,
-					wiadomości automatycznych, wiadomości o czyszczeniu świata i wiadomości
-					ze sklepu. Jeżeli administrator ma uprawnienie wtedy jego wiadomości są
-					i tak pokazywane na chacie nawet jeżeli gracz ma wyłączone.
-                  </p>
-                  <div class="white-button">
-                    <a href="#jd">Więcej zdjęć</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="right-image">
-                  <img src="assets/images/chat3.jpg" alt="" />
-                </div>
-              </div>
+            <div class="titlediv">
+                <a class="title purple">Cześć<a class="title comma purple">,</a></a><br>
+                <a class="title white">Jestem </a><a class="title blue">Voten<a class="title comma blue">,</a></a><br>
+                <a class="title white">Programista Javy</a><br><br>
+                <a class="under-title gray">Bukkit / Spigot / Bungeecord</a><br><br>
+                <a href="mailto:voten641@gmail.com" target="_blank" class="gray under-title"><i class="far fa-envelope"></i>  </a>
+                <a href="https://github.com/voten641" target="_blank" class="gray under-title"><i class="fab fa-github"></i>  </a>
+                <a href="https://twitter.com/voten2cm" target="_blank" class="gray under-title"><i class="fab fa-twitter"></i>  </a>
+                <a href="https://discord.com/users/291308183928963092" target="_blank" class="gray under-title"><i class="fab fa-discord"></i></a>
             </div>
-          </div>
-          <div class="right-image-post">
-            <div class="row">
-              <div class="col-md-6 right-image">
-                <figure class="snip1321">
-                    <img
-                      src="assets/images/dzialki.png"
-                      alt="sq-sample26"
-                    />
-                    <figcaption>
-                      <a
-                        href="assets/images/dzialki.png"
-                        data-lightbox="image-1"
-                        data-title="Caption"
-                        ><i class="fa fa-search"></i
-                      ></a>
-                    </figcaption>
-                  </figure>
-              </div>
-              <div class="col-md-6">
-                <div class="right-text">
-                  <h4>Działki</h4>
-                  <p>
-                    Plugin pozwala na tworzenie działek na całym świecie oprócz na spawnie.
-					Do działania potrzebny jest WorldGuard, działka nie utworzy się jeżeli
-					w pobliżu jest inna działka(żeby nie nachodziły na siebie). Dodatkowo
-					jest kompatybilny z pluginem ProjectKorra i blokuje magię na terenie działek.
-                  </p>
-                  <div class="white-button">
-                    <a style="color:#a43f49">Brak innych zdjęć</a>
-                  </div>
-			<p>Plugin robiony na zamówienie dla GoldRoger</p>
-                </div>
-              </div>
+            <div class="scroll-down">
+                <a class="gray">Przewiń na dół</a><br>
+                <i class="fas fa-chevron-down gray wide"></i>
             </div>
-          </div>
-          <div class="right-image-post">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="left-text">
-                  <h4>Stoniarki i Autosell</h4>
-                  <p>
-                    Plugin dodaje 5 poziomów stoniarek, wszystkie generują tak samo stone
-                      ale każda ma inny drop. Większy poziom oznacza drop na kolejne przedmioty
-                      i większe szanse. Także w pluginie jest dodatek do SkyBlocka w postaci
-                      autosell'a na kaktusy i trzcine (do poprawnego działania potrzebny jest
-                      plugin Essentials, Vault i Bentobox).
-                  </p>
-                  <div class="white-button">
-                    <a href="#jd3">Więcej zdjęć</a>
-                  </div>
-			            <p>Plugin robiony na zamówienie dla serwera SkyLander</p>
+            <div class="about-me"
+                data-aos="fade-up"
+                data-aos-offset="0"
+                data-aos-delay="50"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out"
+                data-aos-mirror="true"
+                data-aos-once="true"
+                data-aos-anchor-placement="top-center"
+            >
+                <div class="ab-title center">
+                    <a class="title gray">O mnie</a>
                 </div>
-              </div>
-              <div class="col-md-6">
-                <div class="right-image">
-                  <img src="assets/images/stoniarki1.png" alt="" />
+                <div class="ab-edu">
+                    <div class="info-ab">
+                        <div class="info-ab-title"><a class="info-ab-title gray">Szkoła</a></div>
+                        <a class="info-ab-title-2 white">Technikum informatyczne</a><br>
+                        <a class="inf-ab-title-2 gray">2018 - do teraz</a>
+                    </div>
                 </div>
-              </div>
+                <div class="ab-exp">
+                    <div class="info-ab">
+                        <div class="info-ab-title"><a class="info-ab-title gray">Doświadczenie</a></div>
+                        <a class="info-ab-title-2 white">HTML / PHP</a><br><br>
+                        <a class="info-ab-desc white">Programowanie różnych mniej <br>zaawansowanych stron <br>lub gier przeglądarkowych<br> używając <a href="https://phaser.io" target="_blank" class="purple" style="text-decoration: none;">Phaser</a></a><br>
+                        <a class="inf-ab-title-2 gray">2015-2017</a>
+                    </div>
+                    <div class="info-ab-no">
+                        <a class="info-ab-title-2 white">C++ / C#</a><br><br>
+                        <a class="info-ab-desc white">Tworzenie programów lub<br> lub gier przy użyciu <br><a href="https://unity.com" target="_blank" class="purple" style="text-decoration: none;">Unity</a></a><br>
+                        <a class="inf-ab-title-2 gray">2016-2017</a>
+                    </div>
+                    <div class="info-ab-no">
+                        <a class="info-ab-title-2 white">Java</a><br><br>
+                        <a class="info-ab-desc white">Tworzenie i konfigurowanie <br>pluginów lub całych <br>serwerów w Spigot / Bungeecord</a><br>
+                        <a class="inf-ab-title-2 gray">2018 - do teraz</a>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="right-image-post">
-            <div class="row">
-              <div class="col-md-6 right-image">
-                <figure class="snip1321">
-                    <img
-                      src="assets/images/backupy1.png"
-                      alt="sq-sample26"
-                    />
-                    <figcaption>
-                      <a
-                        href="assets/images/backupy1.png"
-                        data-lightbox="image-1"
-                        data-title="Caption"
-                        ><i class="fa fa-search"></i
-                      ></a>
-                    </figcaption>
-                  </figure>
-              </div>
-              <div class="col-md-6">
-                <div class="right-text">
-                  <h4>Drop, Schowek, Vanish i Backupy</h4>
-                  <p>
-                    Plugin zawiera w sobie Drop ze stone (do skonfigurowania, można ustawić drop każdego przedmiotu w minecraft), Schowek aby gracz nie miał więcej
-					  pereł i złotych jabłek, Vanish jest to panel aby admin mógł wybrać czy chce podnosić i upuszczać przedmioty, otwierać skrzynki i uderzać graczy,
-					  Backup przedmiotów w ekwipunku wykonuje się przy śmierci gracza zapisuje także punkty z FunnyGuilds jakie gracz stracił, gdy wystąpi jakiś
-					  błąd lub gracz zostanie zabity przez cheatera administrator może przywrócić graczowi przedmioty i punkty.
-                  </p>
-                  <div class="white-button">
-                    <a href="#jd4">Więcej zdjęć</a>
-                  </div>
+            <div class="skills"
+            data-aos="fade-up"
+            data-aos-offset="0"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="true"
+            data-aos-anchor-placement="top-center"
+        >
+                <div class="ab-title center">
+                    <a class="title gray">Umiejętności</a>
                 </div>
-              </div>
+                <div class="skills=bars">
+                    <a class="info-ab-title-2 white">Java</a><br>
+                    <progress class="pbar" max="100" value="75"></progress><a class="white"> 75%</a><br><br>
+                    <a class="info-ab-title-2 white">HTML / CSS / PHP</a><br>
+                    <progress class="pbar" max="100" value="65"></progress><a class="white"> 65%</a><br><br>
+                    <a class="info-ab-title-2 white">C++ / C#</a><br>
+                    <progress class="pbar" max="100" value="65"></progress><a class="white"> 65%</a><br><br>
+                </div>
             </div>
-          </div>
-          <div class="right-image-post">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="left-text">
-                  <h4>Integracja ze sklepem</h4>
-                  <p>
-                    Działa bez jakichkolwiek innych pluginów. Łączy się z zaszyfrowanym api do którego potrzebny jest klucz serwera i klucz klienta,
-                    po pobraniu komend z api wykonuje je na serwerze, jeżeli komenda była skierowana dla gracza wtedy sprawdza czy gracz jest online,
-                    po wykonaniu wpisuje w bazie danych(MYSQL) jaka komenda się wykonała, dokładną datę wykonania, nick gracza i czy gracz był na serwerze.
-                  </p>
-                  <div class="white-button">
-                    <a href="">Brak zdjęć</a>
-                  </div>
-			            <p>Plugin robiony na zamówienie dla Mati (Jaku)</p>
+            
+            <div class="skills"
+            data-aos="fade-up"
+            data-aos-offset="0"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="true"
+            data-aos-anchor-placement="top-center"
+        >
+                <div class="ab-title center">
+                    <a class="title gray">Moje prace</a><br>
+                    <a class="title purple">4 przykłady</a>
                 </div>
-              </div>
-              <div class="col-md-6">
-                <div class="right-image">
-                  <img src="assets/images/noimage.png" alt="" />
+                <div class="works">
+                    <div class="work-1">
+                        <img class="work-img" src="assets/images/Incognito1.png"><br><br>
+                        <a class="info-ab-title-2 purple bold">Incognito Plugin</a><br><br>
+                        <a class="info-ab-desc white">Pozwala on na zmianę nazwy gracza nad głową i na chacie, a także na zmianę skina. Plugin jest w pełni funkcjonalny z FunnyGuilds. Działa on bez przelogowywania się i do wyboru są 2 opcje, jedna pozwala na zmianę incognito poprzez komendy a druga poprzez menu.</a><br><br>
+                    </div>
+                    <div class="work-1">
+                        <img class="work-img" src="assets/images/chat1.jpg"><br><br>
+                        <a class="info-ab-title-2 purple bold">Konfiguracja chatu</a><br><br>
+                        <a class="info-ab-desc white">Plugin pozwala na wyłączenie: wiadomości prywatnych, wiadomości o zabójstwie, wiadomości globalnych, wiadomości dotyczących dropu, wiadomości automatycznych, wiadomości o czyszczeniu świata i wiadomości ze sklepu. Jeżeli administrator ma uprawnienie wtedy jego wiadomości są i tak pokazywane na chacie nawet jeżeli gracz ma wyłączone.</a><br>
+                    </div>
+                    <div class="work-1">
+                        <img class="work-img" src="assets/images/stoniarki1.png"><br><br>
+                        <a class="info-ab-title-2 purple bold">Stoniarki i Autosell</a><br><br>
+                        <a class="info-ab-desc white">Plugin dodaje 5 poziomów stoniarek, wszystkie generują tak samo stone ale każda ma inny drop. Większy poziom oznacza drop na kolejne przedmioty i większe szanse. Także w pluginie jest dodatek do SkyBlocka w postaci autosell'a na kaktusy i trzcine</a><br>
+                    </div>
+                    <div class="work-1">
+                        <img class="work-img" src="assets/images/noimage.png"><br><br>
+                        <a class="info-ab-title-2 purple bold">BetonQuest ItemsAdder addon</a><br><br>
+                        <a class="info-ab-desc white">Plugin pozwala na tworzenie zadań w BetonQuest i sprawdzanie/wykonywanie akcji związanych z ItemsAdder.</a><br><br>
+                        <a href="https://www.spigotmc.org/resources/betonquest-itemsadder-addon.90933/" class="blue no-dec">Strona SpigotMc</a>
+                    </div>
                 </div>
-              </div>
+                <div class="all-works center"><a href="all-works.html" class="title blue no-dec">Wszystkie prace</a></div>
             </div>
-          </div>
-          
-          <div class="right-image-post">
-            <div class="row">
-              <div class="col-md-6 right-image">
-                <figure class="snip1321">
-                    <img
-                      src="assets/images/statystykiad1.png"
-                      alt="sq-sample26"
-                    />
-                    <figcaption>
-                      <a
-                        href="assets/images/statystykiad1.png"
-                        data-lightbox="image-1"
-                        data-title="Caption"
-                        ><i class="fa fa-search"></i
-                      ></a>
-                    </figcaption>
-                  </figure>
-              </div>
-              <div class="col-md-6">
-                <div class="right-text">
-                  <h4>Plugin sprawdzający Administracje</h4>
-                  <p>
-                    Plugin zapisuje takie informacje o graczu jak: ile bloków postawił, ile bloków zniszczył, czas w którym chodził,
-                     ilość bloków które przeszedł, czas w którym był afk i napisane wiadomości
-                  </p>
-                  <div class="white-button">
-                    <a href="#jd5">Więcej zdjęć</a>
-                  </div>
-                </div>
-                <p>Plugin robiony na zamówienie dla GoldRoger</p>
-              </div>
-            </div>
-          </div>
         </div>
-
-        <div class="right-image-post">
-          <div class="row">
-            <div class="col-md-6">
-              <div class="left-text">
-                <h4>Integracja Pluginu BetonQuest i ItemsAdder</h4>
-                <p>
-                  <a href="https://www.spigotmc.org/resources/betonquest-itemsadder-addon.90933/">Link do SpigotMc</a><br>
-                  Plugin pozwala na tworzenie zadań w BetonQuest i sprawdzanie/wykonywanie akcji związanych z ItemsAdder.
-                </p>
-                <div class="white-button">
-                  <a href="">Brak zdjęć</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="right-image">
-                <img src="assets/images/noimage.png" alt="" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section my-work" id="section2">
-        <div class="container">
-          <div id="jd2" class="section-heading">
-            <h2>Incognito</h2>
-            <div class="line-dec"></div>
-          </div>
-          <div class="row">
-            <div class="isotope-wrapper">
-              <div class="isotope-box">
-                <div class="isotope-item" data-type="nature">
-                  <figure class="snip1321">
-                    <img
-                      src="assets/images/Incognito1.png"
-                      alt="sq-sample26"
-                    />
-                    <figcaption>
-                      <a
-                        href="assets/images/Incognito1.png"
-                        data-lightbox="image-1"
-                        data-title="Caption"
-                        ><i class="fa fa-search"></i
-                      ></a>
-                    </figcaption>
-                  </figure>
-                </div>
-
-                <div class="isotope-item" data-type="people">
-                  <figure class="snip1321">
-                    <img
-                      src="assets/images/Incognito2.png"
-                      alt="sq-sample26"
-                    />
-                    <figcaption>
-                      <a
-                        href="assets/images/Incognito2.png"
-                        data-lightbox="image-1"
-                        data-title="Caption"
-                        ><i class="fa fa-search"></i
-                      ></a>
-                    </figcaption>
-                  </figure>
-                </div>
-
-                <div class="isotope-item" data-type="animals">
-                  <figure class="snip1321">
-                    <img
-                      src="assets/images/Incognito3.png"
-                      alt="sq-sample26"
-                    />
-                    <figcaption>
-                      <a
-                        href="assets/images/Incognito3.png"
-                        data-lightbox="image-1"
-                        data-title="Caption"
-                        ><i class="fa fa-search"></i
-                      ></a>
-                    </figcaption>
-                  </figure>
-                </div>
-
-                <div class="isotope-item" data-type="people">
-                  <figure class="snip1321">
-                    <img
-                      src="assets/images/Incognito4.png"
-                      alt="sq-sample26"
-                    />
-                    <figcaption>
-                      <a
-                        href="assets/images/Incognito4.png"
-                        data-lightbox="image-1"
-                        data-title="Caption"
-                        ><i class="fa fa-search"></i
-                      ></a>
-                    </figcaption>
-                  </figure>
-                </div>
-
-                <div class="isotope-item" data-type="nature">
-                  <figure class="snip1321">
-                    <img
-                      src="assets/images/Incognito5.png"
-                      alt="sq-sample26"
-                    />
-                    <figcaption>
-                      <a
-                        href="assets/images/Incognito5.png"
-                        data-lightbox="image-1"
-                        data-title="Caption"
-                        ><i class="fa fa-search"></i
-                      ></a>
-                    </figcaption>
-                  </figure>
-                </div>
-
-                <div class="isotope-item" data-type="animals">
-                  <figure class="snip1321">
-                    <img
-                      src="assets/images/Incognito6.png"
-                      alt="sq-sample26"
-                    />
-                    <figcaption>
-                      <a
-                        href="assets/images/Incognito6.png"
-                        data-lightbox="image-1"
-                        data-title="Caption"
-                        ><i class="fa fa-search"></i
-                      ></a>
-                    </figcaption>
-                  </figure>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-	  <section class="section my-work">
-        <div class="container">
-          <div id="jd" class="section-heading">
-            <h2>Konfiguracja Chatu</h2>
-            <div class="line-dec"></div>
-          </div>
-          <div class="row">
-            <div class="isotope-wrapper">
-              <div class="isotope-box">
-                <div class="isotope-item" data-type="nature">
-                  <figure class="snip1321">
-                    <img
-                      src="assets/images/chat1.jpg"
-                      alt="sq-sample26"
-                    />
-                    <figcaption>
-                      <a
-                        href="assets/images/chat1.jpg"
-                        data-lightbox="image-1"
-                        data-title="Caption"
-                        ><i class="fa fa-search"></i
-                      ></a>
-                    </figcaption>
-                  </figure>
-                </div>
-
-                <div class="isotope-item" data-type="people">
-                  <figure class="snip1321">
-                    <img
-                      src="assets/images/chat2.jpg"
-                      alt="sq-sample26"
-                    />
-                    <figcaption>
-                      <a
-                        href="assets/images/chat2.jpg"
-                        data-lightbox="image-1"
-                        data-title="Caption"
-                        ><i class="fa fa-search"></i
-                      ></a>
-                    </figcaption>
-                  </figure>
-                </div>
-
-                <div class="isotope-item" data-type="animals">
-                  <figure class="snip1321">
-                    <img
-                      src="assets/images/chat3.jpg"
-                      alt="sq-sample26"
-                    />
-                    <figcaption>
-                      <a
-                        href="assets/images/chat3.jpg"
-                        data-lightbox="image-1"
-                        data-title="Caption"
-                        ><i class="fa fa-search"></i
-                      ></a>
-                    </figcaption>
-                  </figure>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-	  <section class="section my-work">
-        <div class="container">
-          <div id="jd3" class="section-heading">
-            <h2>Stoniarki i Autosell</h2>
-            <div class="line-dec"></div>
-          </div>
-          <div class="row">
-            <div class="isotope-wrapper">
-              <div class="isotope-box">
-                <div class="isotope-item" data-type="nature">
-                  <figure class="snip1321">
-                    <img
-                      src="assets/images/stoniarkigif.gif"
-                      alt="sq-sample26"
-                    />
-                    <figcaption>
-                      <a
-                        href="assets/images/stoniarkigif.gif"
-                        data-lightbox="image-1"
-                        data-title="Caption"
-                        ><i class="fa fa-search"></i
-                      ></a>
-                    </figcaption>
-                  </figure>
-                </div>
-
-                <div class="isotope-item" data-type="people">
-                  <figure class="snip1321">
-                    <img
-                      src="assets/images/stoniarki1.png"
-                      alt="sq-sample26"
-                    />
-                    <figcaption>
-                      <a
-                        href="assets/images/stoniarki1.png"
-                        data-lightbox="image-1"
-                        data-title="Caption"
-                        ><i class="fa fa-search"></i
-                      ></a>
-                    </figcaption>
-                  </figure>
-                </div>
-
-                <div class="isotope-item" data-type="animals">
-                  <figure class="snip1321">
-                    <img
-                      src="assets/images/stoniarki2.png"
-                      alt="sq-sample26"
-                    />
-                    <figcaption>
-                      <a
-                        href="assets/images/stoniarki2.png"
-                        data-lightbox="image-1"
-                        data-title="Caption"
-                        ><i class="fa fa-search"></i
-                      ></a>
-                    </figcaption>
-                  </figure>
-                </div>
-                <div class="isotope-item" data-type="animals">
-                  <figure class="snip1321">
-                    <img
-                      src="assets/images/autosell1.png"
-                      alt="sq-sample26"
-                    />
-                    <figcaption>
-                      <a
-                        href="assets/images/autosell1.png"
-                        data-lightbox="image-1"
-                        data-title="Caption"
-                        ><i class="fa fa-search"></i
-                      ></a>
-                    </figcaption>
-                  </figure>
-                </div>
-                <div class="isotope-item" data-type="animals">
-                  <figure class="snip1321">
-                    <img
-                      src="assets/images/autosell2.png"
-                      alt="sq-sample26"
-                    />
-                    <figcaption>
-                      <a
-                        href="assets/images/autosell2.png"
-                        data-lightbox="image-1"
-                        data-title="Caption"
-                        ><i class="fa fa-search"></i
-                      ></a>
-                    </figcaption>
-                  </figure>
-                </div>
-                <div class="isotope-item" data-type="animals">
-                  <figure class="snip1321">
-                    <img
-                      src="assets/images/autosellgif.gif"
-                      alt="sq-sample26"
-                    />
-                    <figcaption>
-                      <a
-                        href="assets/images/autosellgif.gif"
-                        data-lightbox="image-1"
-                        data-title="Caption"
-                        ><i class="fa fa-search"></i
-                      ></a>
-                    </figcaption>
-                  </figure>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-		
-		<section class="section my-work">
-        <div class="container">
-          <div id="jd4" class="section-heading">
-            <h2>Drop, Schowek, Vanish i Backupy</h2>
-            <div class="line-dec"></div>
-          </div>
-          <div class="row">
-            <div class="isotope-wrapper">
-              <div class="isotope-box">
-                <div class="isotope-item" data-type="nature">
-                  <figure class="snip1321">
-                    <img
-                      src="assets/images/backupy1.png"
-                      alt="sq-sample26"
-                    />
-                    <figcaption>
-                      <a
-                        href="assets/images/backupy1.png"
-                        data-lightbox="image-1"
-                        data-title="Caption"
-                        ><i class="fa fa-search"></i
-                      ></a>
-                    </figcaption>
-                  </figure>
-                </div>
-
-                <div class="isotope-item" data-type="people">
-                  <figure class="snip1321">
-                    <img
-                      src="assets/images/backupy2.png"
-                      alt="sq-sample26"
-                    />
-                    <figcaption>
-                      <a
-                        href="assets/images/backupy2.png"
-                        data-lightbox="image-1"
-                        data-title="Caption"
-                        ><i class="fa fa-search"></i
-                      ></a>
-                    </figcaption>
-                  </figure>
-                </div>
-
-                <div class="isotope-item" data-type="animals">
-                  <figure class="snip1321">
-                    <img
-                      src="assets/images/backupy3.png"
-                      alt="sq-sample26"
-                    />
-                    <figcaption>
-                      <a
-                        href="assets/images/backupy3.png"
-                        data-lightbox="image-1"
-                        data-title="Caption"
-                        ><i class="fa fa-search"></i
-                      ></a>
-                    </figcaption>
-                  </figure>
-                </div>
-                <div class="isotope-item" data-type="animals">
-                  <figure class="snip1321">
-                    <img
-                      src="assets/images/backupy4.png"
-                      alt="sq-sample26"
-                    />
-                    <figcaption>
-                      <a
-                        href="assets/images/backupy4.png"
-                        data-lightbox="image-1"
-                        data-title="Caption"
-                        ><i class="fa fa-search"></i
-                      ></a>
-                    </figcaption>
-                  </figure>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section my-work">
-        <div class="container">
-          <div id="jd5" class="section-heading">
-            <h2>Statystyki Administracji</h2>
-            <div class="line-dec"></div>
-          </div>
-          <div class="row">
-            <div class="isotope-wrapper">
-              <div class="isotope-box">
-                <div class="isotope-item" data-type="nature">
-                  <figure class="snip1321">
-                    <img
-                      src="assets/images/statystykiad1.png"
-                      alt="sq-sample26"
-                    />
-                    <figcaption>
-                      <a
-                        href="assets/images/statystykiad1.png"
-                        data-lightbox="image-1"
-                        data-title="Caption"
-                        ><i class="fa fa-search"></i
-                      ></a>
-                    </figcaption>
-                  </figure>
-                </div>
-
-                <div class="isotope-item" data-type="people">
-                  <figure class="snip1321">
-                    <img
-                      src="assets/images/statystykiad2.png"
-                      alt="sq-sample26"
-                    />
-                    <figcaption>
-                      <a
-                        href="assets/images/statystykiad2.png"
-                        data-lightbox="image-1"
-                        data-title="Caption"
-                        ><i class="fa fa-search"></i
-                      ></a>
-                    </figcaption>
-                  </figure>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-
-      <section class="section contact-me" id="section3">
-        <div class="container">
-          <div class="section-heading">
-            <h2>Kontakt</h2>
-            <div class="line-dec"></div>
-            <span>
-			Discord: Voten#4765</br>
-			Mail: Voten641@gmail.com
-			</span>
-          </div>
-        </div>
-      </section>
-    </div>
-
-    <!-- Scripts -->
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-    <script src="assets/js/isotope.min.js"></script>
-    <script src="assets/js/owl-carousel.js"></script>
-    <script src="assets/js/lightbox.js"></script>
-    <script src="assets/js/custom.js"></script>
-  </body>
+    </body>
 </html>
