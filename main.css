@@ -137,6 +137,7 @@ progress::-moz-progress-bar {
     text-align: center;
     width: 16rem;
     padding-bottom: 1rem;
+    margin-left: 1rem;
 }
 .work-img{
     border-radius: 10px;
